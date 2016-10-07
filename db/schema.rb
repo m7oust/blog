@@ -10,16 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161007035646) do
+=======
+ActiveRecord::Schema.define(version: 20160914032806) do
+>>>>>>> 3a29e83cd68e5dbbb7e7945b9469a3b4522885df
 
   create_table "comments", force: :cascade do |t|
     t.integer  "post_id"
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer  "user_id"
     t.index ["post_id"], name: "index_comments_on_post_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
+=======
+    t.index ["post_id"], name: "index_comments_on_post_id"
+>>>>>>> 3a29e83cd68e5dbbb7e7945b9469a3b4522885df
   end
 
   create_table "posts", force: :cascade do |t|
@@ -27,6 +35,7 @@ ActiveRecord::Schema.define(version: 20161007035646) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer  "user_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
@@ -36,6 +45,8 @@ ActiveRecord::Schema.define(version: 20161007035646) do
     t.string   "last_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+>>>>>>> 3a29e83cd68e5dbbb7e7945b9469a3b4522885df
   end
 
 end
